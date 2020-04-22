@@ -1,6 +1,6 @@
 'use strict';
 
-const { createClient, createServer, states: { PLAY } } = require('minecraft-protocol');
+const { createClient, states: { PLAY } } = require('minecraft-protocol');
 const fs = require('fs');
 const credentials = require('./credentials');
 
