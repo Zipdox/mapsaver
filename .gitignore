@@ -1,0 +1,5 @@
+maps/
+node_modules/
+maps.json
+package-lock.json
+processedmap.json
