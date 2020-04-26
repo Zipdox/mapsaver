@@ -12,8 +12,6 @@ if(fs.existsSync('skip.txt')){
     let skipFile = fs.readFileSync('skip.txt', 'utf-8');
     skipmaps = skipFile.split(/\r?\n/);
 }
-console.log(skipmaps);
-
 
 
 console.log("Logging in...");
