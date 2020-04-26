@@ -18,4 +18,4 @@ for(map of maplist){
     }
 }
 const outjson = JSON.stringify(outobject);
-fs.writeFileSync('processedmaps.json', outjson);
+fs.writeFileSync('processed.json', outjson);

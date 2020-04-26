@@ -1,5 +1,5 @@
 module.exports = {
-    host: "constantiam.net",
+    host: "example.com",
     port: 25565,
     username: "email",
     password: "password",

@@ -7,6 +7,14 @@ const credentials = require('./credentials');
 if (!fs.existsSync('maps')){
     fs.mkdirSync('maps');
 }
+var skipmaps = [];
+if(fs.existsSync('skip.txt')){
+    let skipFile = fs.readFileSync('skip.txt', 'utf-8');
+    skipmaps = skipFile.split(/\r?\n/);
+}
+console.log(skipmaps);
+
+
 
 console.log("Logging in...");
 //console.log("After you stop receiving, press any key to exit.");
@@ -45,6 +53,7 @@ client.on('packet', (data, meta) => {
 
     if(meta.name != 'map') return;
     if(data.data == undefined) return;
+    if(skipmaps.includes(String(data.itemDamage))) return;
     if(maps.includes(data.itemDamage)) return;
     console.log("Receiving map", data.itemDamage);
     maps.push(data.itemDamage);

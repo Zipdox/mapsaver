@@ -2,4 +2,6 @@ maps/
 node_modules/
 maps.json
 package-lock.json
-processedmap.json
+processed.json
+credentials.js
+skip.txt
