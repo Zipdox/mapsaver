@@ -9,4 +9,4 @@ A script for minecraft that saves all maps within loading distance (in item fram
   * Optional: Create a file called skip.txt with a list of map IDs (one each line) to not download.
   * Run `node index.js`
   * Afer you stop receiving maps for 5 second the script will exit automatically.
-  * A list of downloaded maps will be in `maps.json` and the map images will be save in the maps folder.
+  * A list of downloaded maps will be in `maps.json` and the map images will be saved in the maps folder.
